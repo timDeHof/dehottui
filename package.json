@@ -1,0 +1,51 @@
+{
+  "name": "dehottui",
+  "private": true,
+  "version": "1.0.6",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/dehottui.umd.cjs",
+  "module": "./dist/dehottui.js",
+  "exports": {
+    ".": {
+      "import": "./dist/dehottui.js",
+      "require": "./dist/dehottui.umd.cjs"
+    },
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    }
+  },
+  "description": "Dehottui in React and Tailwindcss",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "clean:install": "npm uninstall dehott-components && rm -rf node_modules/ package-lock.json dist/ dehottui-*.tgz && npm install",
+    "build:lib": "npm run build && npm pack && npm add dehottui-*.tgz",
+    "build:prod": "npm run clean:install && npm run build:lib"
+  },
+  "author": "TD",
+  "license": "MIT",
+  "dependencies": {
+    "dehottui": "file:dehottui-1.0.6.tgz",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "postcss": "^8.4.27",
+    "tailwindcss": "^3.3.3",
+    "vite": "^4.4.5"
+  }
+}
