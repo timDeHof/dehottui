@@ -14,7 +14,7 @@ const App = () => {
       </section>
       <TestArea>
         <Button
-          ClassName='bg-yellow-700 hover:bg-teal-700'
+          ClassName='bg-yellow-700 hover:bg-yellow-50 hover:text-yellow-700 hover:border-yellow-700 hover:border-2 text-yellow-50'
           onClick={() => console.log("good bye" + " " + new Date())}>
           Good Bye!!!
         </Button>
