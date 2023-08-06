@@ -1,4 +1,4 @@
-## Dehott-components
+## DehottUI
 
 Component Library build using react and tailwind by Tim DeHof
 
