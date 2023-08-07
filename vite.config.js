@@ -25,7 +25,9 @@ export default defineConfig({
         },
       },
     },
+    compilerOptions: { types: ["vitest/globals"] },
   },
+
   plugins: [react()],
   test: {
     environment: "jsdom",

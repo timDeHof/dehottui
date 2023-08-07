@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import { vi } from "vitest";
+import { describe, test, expect } from "vitest";
 import Card from "../../components/Card/Card";
 
 describe("Render the default card and Custom card", () => {

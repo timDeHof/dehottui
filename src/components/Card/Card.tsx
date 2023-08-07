@@ -1,4 +1,3 @@
-import React from "react";
 import classNamesUtil from "../classNamesUtil";
 import { CardProps } from "./Card.types";
 

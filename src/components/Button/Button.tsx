@@ -1,4 +1,3 @@
-import React from "react";
 import classNamesUtil from "../classNamesUtil";
 import { ButtonProps } from "./Button.types";
 const Button = ({ children, ClassName, onClick, ...rest }: ButtonProps) => {

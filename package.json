@@ -1,6 +1,6 @@
 {
   "name": "dehottui",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "type": "module",
   "files": [
     "dist"
@@ -21,7 +21,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "lint": "eslint . --ext ts,tsx,js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "clean:install": "npm uninstall dehottui && rm -rf node_modules/ package-lock.json dist/ dehottui-*.tgz && npm install",
     "build:lib": "npm run build && npm pack && npm add dehottui-*.tgz",
@@ -37,6 +37,8 @@
     "@testing-library/react": "^14.0.0",
     "@types/react": "^18.2.18",
     "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.3.0",
+    "@typescript-eslint/parser": "^6.3.0",
     "@vitejs/plugin-react": "^4.0.4",
     "@vitest/coverage-v8": "^0.34.1",
     "autoprefixer": "^10.4.14",
@@ -44,6 +46,8 @@
     "eslint-plugin-react": "^7.33.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "eslint-plugin-testing-library": "^5.11.1",
+    "eslint-plugin-vitest": "^0.2.8",
     "jsdom": "^22.1.0",
     "postcss": "^8.4.27",
     "tailwindcss": "^3.3.3",
