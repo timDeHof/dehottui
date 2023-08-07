@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import { vi } from "vitest";
-import Button from "../../components/Button";
+import Button from "../../components/Button/Button";
 
 describe("Render the button and trigger the onClick Event", () => {
   const onClick = vi.fn(); // Mock onClick event

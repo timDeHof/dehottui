@@ -1,5 +1,5 @@
-import CustomButton from "./components/Button";
-import CustomCard from "./components/Card";
+import CustomButton from "./components/Button/Button";
+import CustomCard from "./components/Card/Card";
 import { Button } from "dehottui";
 
 import TestArea from "./testArea";

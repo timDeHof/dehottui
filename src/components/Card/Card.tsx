@@ -1,14 +1,25 @@
 import React from "react";
-import classNamesUtil from "./classNamesUtil";
+import classNamesUtil from "../classNamesUtil";
+import { CardProps } from "./Card.types";
 
-const Card = ({ ClassName, src, title, description, tags, ...rest }) => {
+const Card = ({
+  ClassName,
+  src,
+  title,
+  description,
+  tags,
+  ...rest
+}: CardProps) => {
   const Tags = tags ? tags : ["Tag1", "Tag2", "Tag3"];
   const placeholderImage =
     "https://images.unsplash.com/photo-1597484661973-ee6cd0b6482c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80";
   return (
     <div
       data-testid='card'
-      className={`max-w-sm overflow-hidden rounded shadow-lg ${ClassName}`}>
+      className={`max-w-sm overflow-hidden rounded shadow-lg ${classNamesUtil(
+        "card",
+        ClassName ? ClassName : "",
+      )}`}>
       <img
         className='w-full'
         src={src ? src : placeholderImage}
