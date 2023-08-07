@@ -1,6 +1,6 @@
 {
   "name": "dehottui",
-  "version": "1.0.10",
+  "version": "1.0.13",
   "type": "module",
   "files": [
     "dist"
@@ -17,7 +17,7 @@
       "require": "./dist/style.css"
     }
   },
-  "description": "Dehottui in React and Tailwindcss",
+  "description": "Dehottui, a ui component library writen in React and Tailwindcss",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -27,8 +27,10 @@
     "build:lib": "npm run build && npm pack && npm add dehottui-*.tgz",
     "build:prod": "npm run clean:install && npm run build:lib",
     "publish:lib": "npm uninstall dehottui && rm -rf node_modules package-lock.json && npm publish",
-    "test": "vitest",
-    "coverage": "vitest run --coverage"
+    "test": "vitest --run",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest run --coverage"
   },
   "author": "TD",
   "license": "MIT",
@@ -41,6 +43,7 @@
     "@typescript-eslint/parser": "^6.3.0",
     "@vitejs/plugin-react": "^4.0.4",
     "@vitest/coverage-v8": "^0.34.1",
+    "@vitest/ui": "^0.34.1",
     "autoprefixer": "^10.4.14",
     "eslint": "^8.46.0",
     "eslint-plugin-react": "^7.33.1",
@@ -48,11 +51,12 @@
     "eslint-plugin-react-refresh": "^0.4.3",
     "eslint-plugin-testing-library": "^5.11.1",
     "eslint-plugin-vitest": "^0.2.8",
+    "eslint-plugin-vitest-globals": "^1.4.0",
     "jsdom": "^22.1.0",
     "postcss": "^8.4.27",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.1.6",
-    "vite": "^4.4.8",
+    "vite": "^4.4.9",
     "vitest": "^0.34.1"
   },
   "peerDependencies": {

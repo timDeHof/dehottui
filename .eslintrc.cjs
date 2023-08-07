@@ -1,6 +1,11 @@
 module.exports = {
   root: true,
-  env: { browser: true, es2020: true, node: true },
+  env: {
+    "browser": true,
+    "es2020": true,
+    "node": true,
+    "vitest-globals/env": true,
+  },
   parserOptions: { ecmaVersion: "latest", sourceType: "module" },
   ignorePatterns: ["dist", ".eslintrc.cjs", "node_modules", "coverage"],
   extends: [
@@ -9,6 +14,7 @@ module.exports = {
     "plugin:react/jsx-runtime",
     "plugin:react-hooks/recommended",
     "plugin:vitest/recommended",
+    "plugin:vitest-globals/recommended",
   ],
   overrides: [
     {
