@@ -1,4 +1,5 @@
 import CustomButton from "./components/Button";
+import CustomCard from "./components/Card";
 import { Button } from "dehottui";
 
 import TestArea from "./testArea";
@@ -11,6 +12,7 @@ const App = () => {
           onClick={() => console.log("clicked!!!")}>
           Hello World
         </CustomButton>
+        <CustomCard />
       </section>
       <TestArea>
         <Button
@@ -18,6 +20,13 @@ const App = () => {
           onClick={() => console.log("good bye" + " " + new Date())}>
           Good Bye!!!
         </Button>
+        <CustomCard
+          ClassName='bg-red-400'
+          src='https://source.unsplash.com/A5rCN8626Ck'
+          title='The Coldest Sunset'
+          description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.'
+          tags={["photography", "travel", "winter"]}
+        />
       </TestArea>
     </>
   );
