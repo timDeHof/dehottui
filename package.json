@@ -1,6 +1,6 @@
 {
   "name": "dehottui",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "type": "module",
   "files": [
     "dist"
@@ -17,7 +17,7 @@
       "require": "./dist/style.css"
     }
   },
-  "description": "Dehottui, a ui component library writen in React and Tailwindcss",
+  "description": "Dehottui, a ui component library written in React and Tailwindcss",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
